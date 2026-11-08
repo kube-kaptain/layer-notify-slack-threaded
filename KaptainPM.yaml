@@ -1,0 +1,8 @@
+apiVersion: kaptain.org/1.39
+kind: layer-and-layerset-build
+metadata:
+  description: "Adds the Slack threaded notify plugin to Kaptain environment deploy images"
+
+spec:
+  layers:
+    - layerset-and-layer-build:[1.7]

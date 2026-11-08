@@ -1,0 +1,12 @@
+apiVersion: kaptain.org/1.39
+metadata:
+  description: "Slack threaded notify plugin for environment deploy images, added by a prePackagePrepare hook"
+
+spec:
+  main:
+    hooks:
+      prePackagePrepare: kaptain-out/notify-slack-threaded-contribute.bash
+
+layer-payload:
+  - source: /notify-slack-threaded-contribute.bash
+    destination: kaptain-out

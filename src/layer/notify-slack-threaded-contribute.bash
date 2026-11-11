@@ -50,7 +50,7 @@
 #   TOKEN_NAME_STYLE        - Token name style of the consuming project
 set -euo pipefail
 
-DEFAULT_IMAGE="ghcr.io/kube-kaptain/notify/notify-slack-threaded:1.2@sha256:e4ac0794dadae7413425bd70a155a44530dbe4f6124514713f01bf8899b7b8df"
+DEFAULT_IMAGE="ghcr.io/kube-kaptain/notify/notify-slack-threaded:1.3@sha256:32ffdc210fa674c871e436d7046a40a2c1d732a3e910732a7989666a593c54b9"
 USER_DATA_KEY="notify-slack-threaded"
 
 BUILD_SCRIPTS_DIR="${BUILD_SCRIPTS_REPO_ROOT:?BUILD_SCRIPTS_REPO_ROOT is required}/src/scripts"

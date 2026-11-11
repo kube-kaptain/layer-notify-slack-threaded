@@ -20,11 +20,11 @@ In a `prePackagePrepare` hook it:
 You then supply the required tokens in your run-platform's config, prefixed with the environment's project name
 as the environment passphrase token is. For `run-stage` with the default token styles:
 
-| Token                                         | Entry                    |
-|-----------------------------------------------|--------------------------|
-| `RunStage/NotifySlackThreaded/ChannelId`      | `slackChannelId`         |
-| `RunStage/NotifySlackThreaded/AlertChannelId` | `slackAlertChannelId`    |
-| `RunStage/NotifySlackThreaded/BotToken`       | `slackBotToken` (Secret) |
+| Token                                               | Entry                                |
+|-----------------------------------------------------|--------------------------------------|
+| `RunStage/NotifySlackThreaded/ChannelId`            | `slackChannelId`                     |
+| `RunStage/NotifySlackThreaded/AlertChannelId`       | `slackAlertChannelId`                |
+| `RunStage/NotifySlackThreaded/AppBotUserOauthToken` | `slackAppBotUserOAuthToken` (Secret) |
 
 `slackContext` is always `deploy` in an env or rp.
 
